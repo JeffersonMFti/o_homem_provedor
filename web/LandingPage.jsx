@@ -144,13 +144,10 @@ const LandingPage = () => {
                   <em>"Pra namorar comigo, ele precisa ganhar pelo menos 10 mil por mês."</em>
                 </p>
                 <p className="text-stone-600 leading-relaxed">
-                  Redes sociais têm o poder de transformar <strong>exceção em regra</strong>. 
-                  Um padrão que existe em bolsões específicos — grandes capitais, setores privilegiados, 
-                  faixas etárias selecionadas — começa a parecer o mínimo esperável.
+                  Redes sociais têm o poder de transformar <strong>exceção em regra</strong>. Um padrão que existe em bolsões específicos — grandes capitais, setores privilegiados, faixas etárias selecionadas — começa a parecer o mínimo esperável.
                 </p>
                 <p className="text-stone-600 leading-relaxed mt-4">
-                  Este projeto existe para colocar esse número em <strong>perspectiva real</strong>, 
-                  com dados do mercado formal de trabalho brasileiro.
+                  Este projeto existe para colocar esse número em <strong>perspectiva real</strong>, com dados do mercado formal de trabalho brasileiro.
                 </p>
               </div>
               
