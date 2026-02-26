@@ -106,10 +106,15 @@ const LandingPage = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               
-              <button className="px-8 py-4 backdrop-blur-xl bg-white/60 border-2 border-stone-200 rounded-2xl font-bold text-lg hover:border-rose-300 transition-all duration-300 flex items-center gap-2">
+              <a 
+                href="https://github.com/JeffersonMFti/o_homem_provedor" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-8 py-4 backdrop-blur-xl bg-white/60 border-2 border-stone-200 rounded-2xl font-bold text-lg hover:border-rose-300 transition-all duration-300 flex items-center gap-2"
+              >
                 <Github className="w-5 h-5" />
                 Ver no GitHub
-              </button>
+              </a>
             </div>
             
             {/* Floating Icon */}
@@ -517,11 +522,16 @@ const LandingPage = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="group px-10 py-5 bg-stone-900 text-white rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3 justify-center">
+              <a 
+                href="https://github.com/JeffersonMFti/o_homem_provedor" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group px-10 py-5 bg-stone-900 text-white rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3 justify-center"
+              >
                 <Github className="w-6 h-6" />
                 Ver Repositório Completo
                 <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-              </button>
+              </a>
               
               <button className="px-10 py-5 backdrop-blur-xl bg-white/80 border-2 border-stone-300 text-stone-900 rounded-2xl font-bold text-lg hover:border-rose-400 transition-all duration-300 flex items-center gap-3 justify-center">
                 <Database className="w-6 h-6" />
@@ -533,7 +543,12 @@ const LandingPage = () => {
             <div className="mt-16 pt-8 border-t border-stone-300">
               <p className="text-sm text-stone-600">
                 Desenvolvido com Python, React e Tailwind CSS •{' '}
-                <a href="#" className="font-bold hover:text-rose-600 transition-colors">
+                <a 
+                  href="https://github.com/JeffersonMFti" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-bold hover:text-rose-600 transition-colors"
+                >
                   Jefferson Monteiro
                 </a>
               </p>
