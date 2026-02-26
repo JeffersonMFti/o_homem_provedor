@@ -63,6 +63,36 @@ const LandingPage = () => {
     { state: 'Maranhão', ratio: '35.3x', men: '29.426' }
   ];
 
+  const allStatesData = [
+    { rank: 1, state: 'Distrito Federal', ratio: '4.4', men: '106.755', solteiros: '43.336', mulheres: '192.493' },
+    { rank: 2, state: 'Santa Catarina', ratio: '7.8', men: '136.625', solteiros: '41.233', mulheres: '323.591' },
+    { rank: 3, state: 'São Paulo', ratio: '8.0', men: '826.134', solteiros: '310.398', mulheres: '2.471.480' },
+    { rank: 4, state: 'Mato Grosso', ratio: '8.3', men: '60.153', solteiros: '19.395', mulheres: '160.764' },
+    { rank: 5, state: 'Paraná', ratio: '8.6', men: '184.423', solteiros: '59.459', mulheres: '513.123' },
+    { rank: 6, state: 'Rio Grande do Sul', ratio: '9.1', men: '163.531', solteiros: '54.085', mulheres: '494.607' },
+    { rank: 7, state: 'Mato Grosso do Sul', ratio: '10.4', men: '37.738', solteiros: '12.636', mulheres: '131.445' },
+    { rank: 8, state: 'Rio de Janeiro', ratio: '10.5', men: '236.463', solteiros: '92.420', mulheres: '966.718' },
+    { rank: 9, state: 'Goiás', ratio: '11.3', men: '94.680', solteiros: '32.568', mulheres: '368.852' },
+    { rank: 10, state: 'Espírito Santo', ratio: '11.9', men: '46.416', solteiros: '16.299', mulheres: '193.560' },
+    { rank: 11, state: 'Minas Gerais', ratio: '12.5', men: '227.640', solteiros: '91.971', mulheres: '1.149.112' },
+    { rank: 12, state: 'Tocantins', ratio: '13.1', men: '15.886', solteiros: '5.472', mulheres: '71.916' },
+    { rank: 13, state: 'Rondônia', ratio: '16.2', men: '13.978', solteiros: '4.335', mulheres: '70.053' },
+    { rank: 14, state: 'Roraima', ratio: '16.7', men: '5.140', solteiros: '1.794', mulheres: '30.044' },
+    { rank: 15, state: 'Amapá', ratio: '18.5', men: '6.316', solteiros: '2.277', mulheres: '42.206' },
+    { rank: 16, state: 'Rio Grande do Norte', ratio: '20.7', men: '25.386', solteiros: '8.917', mulheres: '184.712' },
+    { rank: 17, state: 'Amazonas', ratio: '21.3', men: '26.691', solteiros: '9.474', mulheres: '201.578' },
+    { rank: 18, state: 'Acre', ratio: '22.8', men: '5.447', solteiros: '1.749', mulheres: '39.929' },
+    { rank: 19, state: 'Pernambuco', ratio: '23.5', men: '62.541', solteiros: '22.164', mulheres: '520.712' },
+    { rank: 20, state: 'Sergipe', ratio: '23.7', men: '16.243', solteiros: '5.712', mulheres: '135.445' },
+    { rank: 21, state: 'Paraíba', ratio: '24.0', men: '25.610', solteiros: '8.816', mulheres: '211.596' },
+    { rank: 22, state: 'Pará', ratio: '25.5', men: '47.362', solteiros: '15.814', mulheres: '402.714' },
+    { rank: 23, state: 'Piauí', ratio: '27.1', men: '17.649', solteiros: '6.652', mulheres: '180.307' },
+    { rank: 24, state: 'Ceará', ratio: '27.4', men: '51.478', solteiros: '18.580', mulheres: '508.304' },
+    { rank: 25, state: 'Bahia', ratio: '28.2', men: '80.336', solteiros: '30.116', mulheres: '850.450' },
+    { rank: 26, state: 'Alagoas', ratio: '29.9', men: '18.015', solteiros: '5.768', mulheres: '172.436' },
+    { rank: 27, state: 'Maranhão', ratio: '35.3', men: '29.426', solteiros: '10.266', mulheres: '362.175' }
+  ];
+
   return (
     <>
       <style>{styles}</style>
@@ -461,6 +491,158 @@ const LandingPage = () => {
                   <strong>Como ler:</strong> Em <strong>Distrito Federal</strong>, existem <strong>4.4 mulheres solteiras competindo por cada homem solteiro</strong> que ganha R$ 10k+. 
                   Já no <strong>Maranhão</strong>, são <strong>35.3 mulheres por homem</strong>. 
                   Quanto maior o número, mais acirrada é a competição.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Dados Completos por Estado */}
+        <section className="relative px-6 py-24 bg-white">
+          <div className="max-w-7xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-6 py-3 mb-6 backdrop-blur-xl bg-stone-100 border border-stone-200 rounded-full">
+                <Search className="w-4 h-4 text-stone-600" />
+                <span className="text-xs uppercase tracking-[0.25em] font-bold text-stone-600">
+                  Dados Detalhados
+                </span>
+              </div>
+              
+              <h2 className="text-5xl md:text-6xl font-black tracking-tighter leading-[0.9] mb-4">
+                Todos os estados
+                <span className="block text-gradient">em detalhes</span>
+              </h2>
+              <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+                Ranking completo com dados de todos os 27 estados brasileiros
+              </p>
+            </div>
+
+            {/* Tabela Responsiva */}
+            <div className="backdrop-blur-xl bg-stone-50/80 border border-stone-200 rounded-3xl overflow-hidden">
+              {/* Desktop Table */}
+              <div className="hidden md:block overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-stone-900 text-white">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-sm font-black uppercase tracking-wider">#</th>
+                      <th className="px-6 py-4 text-left text-sm font-black uppercase tracking-wider">Estado</th>
+                      <th className="px-6 py-4 text-center text-sm font-black uppercase tracking-wider">Razão</th>
+                      <th className="px-6 py-4 text-right text-sm font-black uppercase tracking-wider">Homens 10k+</th>
+                      <th className="px-6 py-4 text-right text-sm font-black uppercase tracking-wider">Solteiros</th>
+                      <th className="px-6 py-4 text-right text-sm font-black uppercase tracking-wider">Mulheres Solt.</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-stone-200">
+                    {allStatesData.map((item, idx) => (
+                      <tr 
+                        key={idx} 
+                        className={`hover:bg-stone-100 transition-colors ${
+                          item.rank <= 3 ? 'bg-emerald-50' : 
+                          item.rank >= 25 ? 'bg-rose-50' : 
+                          'bg-white'
+                        }`}
+                      >
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <span className={`text-lg font-black ${
+                            item.rank <= 3 ? 'text-emerald-600' : 
+                            item.rank >= 25 ? 'text-rose-600' : 
+                            'text-stone-900'
+                          }`}>
+                            {item.rank}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <span className="font-bold text-stone-900">{item.state}</span>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-center">
+                          <div className="inline-flex flex-col items-center">
+                            <span className={`text-xl font-black ${
+                              item.rank <= 3 ? 'text-emerald-600' : 
+                              item.rank >= 25 ? 'text-rose-600' : 
+                              'text-stone-900'
+                            }`}>
+                              {item.ratio}
+                            </span>
+                            <span className="text-xs text-stone-500">mulheres/homem</span>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-right font-semibold text-stone-700">
+                          {item.men}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-right font-semibold text-blue-600">
+                          {item.solteiros}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-right font-semibold text-rose-600">
+                          {item.mulheres}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Mobile Cards */}
+              <div className="md:hidden p-4 space-y-4">
+                {allStatesData.map((item, idx) => (
+                  <div 
+                    key={idx}
+                    className={`p-6 rounded-2xl border-2 ${
+                      item.rank <= 3 ? 'bg-emerald-50 border-emerald-200' : 
+                      item.rank >= 25 ? 'bg-rose-50 border-rose-200' : 
+                      'bg-white border-stone-200'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <span className={`text-2xl font-black ${
+                          item.rank <= 3 ? 'text-emerald-600' : 
+                          item.rank >= 25 ? 'text-rose-600' : 
+                          'text-stone-900'
+                        }`}>
+                          #{item.rank}
+                        </span>
+                        <span className="text-lg font-bold text-stone-900">{item.state}</span>
+                      </div>
+                      <div className="text-right">
+                        <div className={`text-2xl font-black ${
+                          item.rank <= 3 ? 'text-emerald-600' : 
+                          item.rank >= 25 ? 'text-rose-600' : 
+                          'text-stone-900'
+                        }`}>
+                          {item.ratio}
+                        </div>
+                        <div className="text-xs text-stone-500">mulheres/homem</div>
+                      </div>
+                    </div>
+                    
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      <div>
+                        <div className="text-xs text-stone-500 mb-1">Homens 10k+</div>
+                        <div className="font-bold text-stone-700">{item.men}</div>
+                      </div>
+                      <div>
+                        <div className="text-xs text-stone-500 mb-1">Solteiros</div>
+                        <div className="font-bold text-blue-600">{item.solteiros}</div>
+                      </div>
+                      <div>
+                        <div className="text-xs text-stone-500 mb-1">Mulheres Solt.</div>
+                        <div className="font-bold text-rose-600">{item.mulheres}</div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Nota Explicativa */}
+            <div className="mt-8 p-6 backdrop-blur-xl bg-blue-50/80 border border-blue-200 rounded-2xl">
+              <div className="flex gap-3">
+                <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div className="text-sm text-stone-700 leading-relaxed">
+                  <strong>Legenda:</strong> <span className="text-emerald-600 font-bold">Verde</span> indica os 3 melhores cenários. 
+                  <span className="text-rose-600 font-bold"> Vermelho</span> indica os 3 piores cenários. 
+                  A coluna <strong>Razão</strong> mostra quantas mulheres solteiras existem para cada homem solteiro que ganha R$ 10k+.
                 </div>
               </div>
             </div>
