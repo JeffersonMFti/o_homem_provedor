@@ -14,13 +14,19 @@ FAIXA_ETARIA = [
 ]
 
 RENDA_MINIMA = 10_000
-ANO_REFERENCIA = 2023
+ANO_REFERENCIA = 2022  # Censo Demográfico 2022
 
 SEXO_MASCULINO = "Homens"
 SEXO_FEMININO = "Mulheres"
-ESTADO_CIVIL_SOLTEIRO = "Solteiro(a)"
+ESTADO_CONJUGAL_SEM_UNIAO = "Não viviam em união"
 
-# Tabelas SIDRA utilizadas
-SIDRA_RENDA = "7439"
-SIDRA_ESTADO_CIVIL = "5929"
-SIDRA_RENDA_UF = "6403"
+# Salário mínimo vigente no Censo 2022 (usado para converter SM em R$)
+SALARIO_MINIMO_CENSO = 1_212
+
+# Tabelas do Censo Demográfico 2022 utilizadas (via SIDRA)
+# Pessoas ocupadas por sexo e classes de rendimento em SM, por UF
+CENSO_RENDA_SM = "10292"
+# Pessoas por estado conjugal, sexo e grupo de idade, por UF
+CENSO_CONJUGAL = "10185"
+# Pessoas ocupadas por sexo e grupo de idade, por UF
+CENSO_OCUPADOS_FAIXA = "10268"
