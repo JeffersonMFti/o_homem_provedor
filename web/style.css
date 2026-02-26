@@ -140,6 +140,15 @@ a:hover { text-decoration: underline; }
 .chart-mapa { min-height: 440px; }
 .chart-barras { min-height: 640px; }
 
+/* ─── CONTAINER SINGLE (seção sobre) ─── */
+.container-single {
+  grid-template-columns: 1fr;
+}
+
+.secao-texto-wide {
+  max-width: 680px;
+}
+
 /* ─── FOOTER ─── */
 footer {
   padding: 2rem 1.5rem;
