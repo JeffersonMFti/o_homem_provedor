@@ -394,7 +394,7 @@ const LandingPage = () => {
                     <span className="text-xl">🏆</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-black">Melhores Odds</h3>
+                    <h3 className="text-2xl font-black">Melhores Cenários</h3>
                     <p className="text-sm text-stone-600">Onde a competição é menos acirrada</p>
                   </div>
                 </div>
@@ -422,7 +422,7 @@ const LandingPage = () => {
                     <span className="text-xl">💔</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-black">Piores Odds</h3>
+                    <h3 className="text-2xl font-black">Piores Cenários</h3>
                     <p className="text-sm text-stone-600">Onde a fila é mais longa</p>
                   </div>
                 </div>
