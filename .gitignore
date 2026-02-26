@@ -1,20 +1,34 @@
+# Ambientes virtuais Python
 venv/
 .venv/
 
+# Dados brutos e processados (podem ser regenerados via pipeline)
 data/raw/
 data/processed/
 
+# Cache Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.pytest_cache/
 
+# Arquivos de sistema
 .env
 .DS_Store
 Thumbs.db
 
+# Jupyter
 *.ipynb_checkpoints
 .ipynb_checkpoints/
 
+# Relatórios PDF gerados (podem ser regenerados via script)
+# NOTA: O script gerar_relatorio_pdf.py DEVE ser commitado
+relatorio_10k_ou_nada.pdf
+temp_report_images/
+
+# Arquivos temporários de desenvolvimento
 ARCHITECTURE.md
 CLAUDE (1).md
+*.tmp
+*.bak

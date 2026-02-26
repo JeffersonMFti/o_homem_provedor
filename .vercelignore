@@ -1,0 +1,25 @@
+# Não ignore arquivos de dados JSON
+!web/data/*.json
+
+# Ignore arquivos Python e cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Ignore notebooks
+*.ipynb_checkpoints
+notebooks/
+
+# Ignore dados brutos (não necessários no deploy)
+data/raw/
+data/processed/
+
+# Ignore configuração local
+.env
+.vscode/
+.idea/

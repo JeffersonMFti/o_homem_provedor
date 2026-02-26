@@ -52,10 +52,14 @@ o_homem_provedor/
 │   └── export.py         # Exportação dos resultados para JSON
 ├── web/                  # Site público hospedado no Vercel
 │   ├── index.html
+├── web/                  # Site público hospedado no Vercel
+│   ├── index.html
 │   ├── style.css
 │   └── main.js           # Consome os JSONs e renderiza via Plotly.js
 ├── app.py                # Dashboard local em Streamlit
+├── gerar_relatorio_pdf.py # Gera relatório completo em PDF
 ├── run_pipeline.py       # Executa o pipeline completo e exporta os JSONs
+├── serve_web.py          # Servidor HTTP local para visualização web
 ├── requirements.txt
 └── README.md
 ```
@@ -63,6 +67,26 @@ o_homem_provedor/
 ---
 
 ## Como rodar localmente
+
+### Opção 1: Visualização Web (recomendado)
+
+```bash
+# Clone o repositório
+git clone https://github.com/JeffersonMFti/o_homem_provedor.git
+cd o_homem_provedor
+
+# Execute o pipeline para gerar os dados (se ainda não existirem)
+python run_pipeline.py
+
+# Inicie o servidor web local
+python serve_web.py
+
+# Acesse no navegador: http://localhost:8000
+```
+
+**Nota importante:** Não abra o arquivo `web/index.html` diretamente no navegador (via `file://`), pois isso causa erros de CORS que impedem o carregamento dos dados. Use sempre o servidor HTTP local.
+
+### Opção 2: Dashboard interativo com Streamlit
 
 ```bash
 # Clone o repositório
@@ -82,6 +106,49 @@ python run_pipeline.py
 # Acesse o dashboard local
 streamlit run app.py
 ```
+
+### Opção 3: Relatório em PDF
+
+Para gerar um relatório completo e profissional em PDF com todos os dados e análises:
+
+```bash
+# Certifique-se de que os dados foram gerados
+python run_pipeline.py
+
+# Gere o relatório PDF
+python gerar_relatorio_pdf.py
+
+# O arquivo relatorio_10k_ou_nada.pdf será criado na raiz do projeto
+```
+
+**O relatório PDF inclui:**
+- Capa com informações do projeto
+- Introdução e contexto
+- Metodologia detalhada e limitações
+- Resultados nacionais com métricas principais
+- Distribuição completa de renda por faixas
+- Análise comparativa por todos os estados
+- Tabelas com dados completos
+- Conclusões e implicações
+- Anexo técnico com especificações das fontes
+
+**Requisitos:** O relatório utiliza `reportlab` e `kaleido` (já incluídos no `requirements.txt`).
+
+---
+
+## Problemas comuns
+
+### Os dados não aparecem na página web?
+
+**Causa mais comum:** Você está abrindo o arquivo HTML diretamente (URL começa com `file://`).
+
+**Solução rápida:** 
+```bash
+python serve_web.py
+# Acesse: http://localhost:8000
+```
+
+Para mais detalhes sobre este e outros problemas, consulte o guia completo: **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)**
 
 ---
 

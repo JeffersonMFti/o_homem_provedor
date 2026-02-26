@@ -4,3 +4,5 @@ sidrapy>=0.1.6
 plotly>=5.18.0
 streamlit>=1.30.0
 pytest>=7.0.0
+reportlab>=4.0.0
+kaleido>=0.2.1
