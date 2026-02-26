@@ -1,4 +1,4 @@
-# R$ 10k ou nada? — Uma análise do mercado de trabalho brasileiro
+# R$ 10k ou nada?: Uma análise do mercado de trabalho brasileiro
 
 > *"Pra namorar comigo, ele precisa ganhar pelo menos 10 mil por mês."*  
 > A frase que tomou as redes. A matemática que ninguém foi atrás.
@@ -17,7 +17,7 @@ Não é uma crítica. É uma análise. Os dados falam por si.
 
 ## Por que fiz isso
 
-Redes sociais têm a habilidade de transformar exceção em regra. Um padrão que existe em bolsões específicos do país — grandes capitais, setores específicos, faixas etárias privilegiadas — começa a parecer o mínimo esperável. Este projeto existe pra colocar esse número em perspectiva real, com dados do mercado formal de trabalho brasileiro.
+Redes sociais têm a habilidade de transformar exceção em regra. Um padrão que existe em bolsões específicos do país, grandes capitais, setores específicos, faixas etárias privilegiadas, começa a parecer o mínimo esperável. Este projeto existe pra colocar esse número em perspectiva real, com dados do mercado formal de trabalho brasileiro.
 
 ---
 
@@ -163,14 +163,14 @@ Nenhum dado foi estimado ou fabricado. O que está aqui é o que o Brasil report
 ## Stack
 
 **Análise (Python)**
-- Pandas / NumPy — processamento e cruzamento das variáveis
-- sidrapy — acesso à API do IBGE
-- Plotly — visualizações no dashboard local
-- Streamlit — dashboard local para exploração
+- Pandas / NumPy, processamento e cruzamento das variáveis
+- sidrapy, acesso à API do IBGE
+- Plotly, visualizações no dashboard local
+- Streamlit, dashboard local para exploração
 
 **Site público (Vercel)**
 - HTML / CSS / JavaScript
-- Plotly.js — renderização dos gráficos no browser
+- Plotly.js, renderização dos gráficos no browser
 - JSONs estáticos gerados pelo pipeline Python
 
 ---
@@ -193,4 +193,4 @@ Dados não julgam. Apenas informam.
 
 ---
 
-*Desenvolvido por [Jefferson Monteiro](https://github.com/JeffersonMFti) — Análise de dados com Python e fontes públicas brasileiras.*
+*Desenvolvido por [Jefferson Monteiro](https://github.com/JeffersonMFti), Análise de dados com Python e fontes públicas brasileiras.*
