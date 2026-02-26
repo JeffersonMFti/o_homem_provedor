@@ -340,7 +340,10 @@ const LandingPage = () => {
             {/* Número Gigante */}
             <div className="mb-8">
               <div className="text-[20vw] md:text-[15vw] font-black tracking-tighter leading-[0.8] text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-pink-500 to-rose-400 animate-gradient">
-                11.8x
+                11.8
+              </div>
+              <div className="text-2xl md:text-3xl font-bold text-rose-400 mt-4">
+                mulheres por homem
               </div>
             </div>
             
@@ -384,6 +387,9 @@ const LandingPage = () => {
                 Os melhores e
                 <span className="block text-gradient">os piores estados</span>
               </h2>
+              <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+                Proporção de <strong>mulheres solteiras por cada homem solteiro</strong> que ganha R$ 10k+
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
@@ -406,10 +412,13 @@ const LandingPage = () => {
                         <div className="text-2xl font-black text-emerald-600">#{idx + 1}</div>
                         <div>
                           <div className="font-bold text-stone-900">{item.state}</div>
-                          <div className="text-xs text-stone-600">{item.men} homens</div>
+                          <div className="text-xs text-stone-600">{item.men} homens 10k+</div>
                         </div>
                       </div>
-                      <div className="text-2xl font-black text-emerald-600">{item.ratio}</div>
+                      <div className="text-right">
+                        <div className="text-2xl font-black text-emerald-600">{item.ratio}</div>
+                        <div className="text-xs text-stone-600">mulheres/homem</div>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -434,10 +443,13 @@ const LandingPage = () => {
                         <div className="text-2xl font-black text-rose-600">#{27 - idx}</div>
                         <div>
                           <div className="font-bold text-stone-900">{item.state}</div>
-                          <div className="text-xs text-stone-600">{item.men} homens</div>
+                          <div className="text-xs text-stone-600">{item.men} homens 10k+</div>
                         </div>
                       </div>
-                      <div className="text-2xl font-black text-rose-600">{item.ratio}</div>
+                      <div className="text-right">
+                        <div className="text-2xl font-black text-rose-600">{item.ratio}</div>
+                        <div className="text-xs text-stone-600">mulheres/homem</div>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -449,8 +461,9 @@ const LandingPage = () => {
               <div className="flex gap-3">
                 <Info className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-stone-700 leading-relaxed">
-                  <strong>Nota:</strong> A proporção varia de <strong>4.4x</strong> (DF) até <strong>35.3x</strong> (MA). 
-                  Fatores como industrialização, PIB per capita e concentração de empregos formais explicam essa disparidade.
+                  <strong>Como ler:</strong> Em <strong>Distrito Federal</strong>, existem <strong>4.4 mulheres solteiras competindo por cada homem solteiro</strong> que ganha R$ 10k+. 
+                  Já no <strong>Maranhão</strong>, são <strong>35.3 mulheres por homem</strong>. 
+                  Quanto maior o número, mais acirrada é a competição.
                 </div>
               </div>
             </div>
