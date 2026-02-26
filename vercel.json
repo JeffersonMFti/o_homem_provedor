@@ -2,24 +2,19 @@
   "github": {
     "silent": true
   },
-  "buildCommand": "python run_pipeline.py --step export || echo 'Build script optional'",
+  "buildCommand": "cd web && npm install && npm run build",
+  "outputDirectory": "web/dist",
+  "framework": "vite",
+  "installCommand": "cd web && npm install",
   "cleanUrls": true,
   "trailingSlash": false,
-  "public": false,
-  "rewrites": [
-    { "source": "/", "destination": "/web/index.html" },
-    { "source": "/index.html", "destination": "/web/index.html" },
-    { "source": "/style.css", "destination": "/web/style.css" },
-    { "source": "/main.js", "destination": "/web/main.js" },
-    { "source": "/data/(.*)", "destination": "/web/data/$1" }
-  ],
   "headers": [
     {
-      "source": "/data/(.*)",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=3600"
+          "value": "public, max-age=31536000, immutable"
         }
       ]
     }

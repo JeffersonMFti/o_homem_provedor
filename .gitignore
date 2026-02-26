@@ -27,6 +27,16 @@ Thumbs.db
 relatorio_10k_ou_nada.pdf
 temp_report_images/
 
+# Node.js / React (Landing Page)
+web/node_modules/
+web/dist/
+web/build/
+web/package-lock.json
+web/yarn.lock
+web/pnpm-lock.yaml
+web/.vite/
+*.log
+
 # Arquivos temporários de desenvolvimento
 ARCHITECTURE.md
 CLAUDE (1).md
