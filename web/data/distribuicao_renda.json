@@ -1,0 +1,82 @@
+[
+  {
+    "classe_sm": "Até 1/4 de salário mínimo",
+    "pessoas": 1676169,
+    "pct": 3.37,
+    "lower_brl": 0.0,
+    "upper_brl": 303.0,
+    "acima_threshold": false
+  },
+  {
+    "classe_sm": "Mais de 1/4 a 1/2 salário mínimo",
+    "pessoas": 2687052,
+    "pct": 5.41,
+    "lower_brl": 303.0,
+    "upper_brl": 606.0,
+    "acima_threshold": false
+  },
+  {
+    "classe_sm": "Mais de 1/2 a 1 salário mínimo",
+    "pessoas": 11347300,
+    "pct": 22.85,
+    "lower_brl": 606.0,
+    "upper_brl": 1212.0,
+    "acima_threshold": false
+  },
+  {
+    "classe_sm": "Mais de 1 a 2 salários mínimos",
+    "pessoas": 16321751,
+    "pct": 32.86,
+    "lower_brl": 1212.0,
+    "upper_brl": 2424.0,
+    "acima_threshold": false
+  },
+  {
+    "classe_sm": "Mais de 2 a 3 salários mínimos",
+    "pessoas": 7868144,
+    "pct": 15.84,
+    "lower_brl": 2424.0,
+    "upper_brl": 3636.0,
+    "acima_threshold": false
+  },
+  {
+    "classe_sm": "Mais de 3 a 5 salários mínimos",
+    "pessoas": 5365527,
+    "pct": 10.8,
+    "lower_brl": 3636.0,
+    "upper_brl": 6060.0,
+    "acima_threshold": false
+  },
+  {
+    "classe_sm": "Mais de 5 a 10 salários mínimos",
+    "pessoas": 2821602,
+    "pct": 5.68,
+    "lower_brl": 6060.0,
+    "upper_brl": 12120.0,
+    "acima_threshold": false
+  },
+  {
+    "classe_sm": "Mais de 10 a 15 salários mínimos",
+    "pessoas": 724722,
+    "pct": 1.46,
+    "lower_brl": 12120.0,
+    "upper_brl": 18180.0,
+    "acima_threshold": true
+  },
+  {
+    "classe_sm": "Mais de 15 a 20 salários mínimos",
+    "pessoas": 415857,
+    "pct": 0.84,
+    "lower_brl": 18180.0,
+    "upper_brl": 24240.0,
+    "acima_threshold": true
+  },
+  {
+    "classe_sm": "Mais de 20 salários mínimos",
+    "pessoas": 440387,
+    "pct": 0.89,
+    "lower_brl": 24240.0,
+    "upper_brl": Infinity,
+    "acima_threshold": true
+  }
+]

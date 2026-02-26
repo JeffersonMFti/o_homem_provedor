@@ -1,0 +1,245 @@
+[
+  {
+    "uf": "Maranhão",
+    "homens_10k": 29426,
+    "pct_homens_10k": 2.2,
+    "taxa_solteiros": 0.3489,
+    "homens_10k_solteiros": 10266,
+    "mulheres_solteiras": 362175,
+    "razao": 35.3
+  },
+  {
+    "uf": "Alagoas",
+    "homens_10k": 18015,
+    "pct_homens_10k": 2.86,
+    "taxa_solteiros": 0.3201,
+    "homens_10k_solteiros": 5768,
+    "mulheres_solteiras": 172436,
+    "razao": 29.9
+  },
+  {
+    "uf": "Bahia",
+    "homens_10k": 80336,
+    "pct_homens_10k": 2.6,
+    "taxa_solteiros": 0.3749,
+    "homens_10k_solteiros": 30116,
+    "mulheres_solteiras": 850450,
+    "razao": 28.2
+  },
+  {
+    "uf": "Ceará",
+    "homens_10k": 51478,
+    "pct_homens_10k": 2.76,
+    "taxa_solteiros": 0.3609,
+    "homens_10k_solteiros": 18580,
+    "mulheres_solteiras": 508304,
+    "razao": 27.4
+  },
+  {
+    "uf": "Piauí",
+    "homens_10k": 17649,
+    "pct_homens_10k": 2.7,
+    "taxa_solteiros": 0.3769,
+    "homens_10k_solteiros": 6652,
+    "mulheres_solteiras": 180307,
+    "razao": 27.1
+  },
+  {
+    "uf": "Pará",
+    "homens_10k": 47362,
+    "pct_homens_10k": 2.64,
+    "taxa_solteiros": 0.3339,
+    "homens_10k_solteiros": 15814,
+    "mulheres_solteiras": 402714,
+    "razao": 25.5
+  },
+  {
+    "uf": "Paraíba",
+    "homens_10k": 25610,
+    "pct_homens_10k": 3.16,
+    "taxa_solteiros": 0.3442,
+    "homens_10k_solteiros": 8816,
+    "mulheres_solteiras": 211598,
+    "razao": 24.0
+  },
+  {
+    "uf": "Sergipe",
+    "homens_10k": 16243,
+    "pct_homens_10k": 3.34,
+    "taxa_solteiros": 0.3517,
+    "homens_10k_solteiros": 5712,
+    "mulheres_solteiras": 135445,
+    "razao": 23.7
+  },
+  {
+    "uf": "Pernambuco",
+    "homens_10k": 62541,
+    "pct_homens_10k": 3.28,
+    "taxa_solteiros": 0.3544,
+    "homens_10k_solteiros": 22164,
+    "mulheres_solteiras": 520712,
+    "razao": 23.5
+  },
+  {
+    "uf": "Acre",
+    "homens_10k": 5447,
+    "pct_homens_10k": 3.16,
+    "taxa_solteiros": 0.3211,
+    "homens_10k_solteiros": 1749,
+    "mulheres_solteiras": 39929,
+    "razao": 22.8
+  },
+  {
+    "uf": "Amazonas",
+    "homens_10k": 26691,
+    "pct_homens_10k": 3.35,
+    "taxa_solteiros": 0.355,
+    "homens_10k_solteiros": 9474,
+    "mulheres_solteiras": 201578,
+    "razao": 21.3
+  },
+  {
+    "uf": "Rio Grande Do Norte",
+    "homens_10k": 25386,
+    "pct_homens_10k": 3.54,
+    "taxa_solteiros": 0.3512,
+    "homens_10k_solteiros": 8917,
+    "mulheres_solteiras": 184712,
+    "razao": 20.7
+  },
+  {
+    "uf": "Amapá",
+    "homens_10k": 6316,
+    "pct_homens_10k": 3.89,
+    "taxa_solteiros": 0.3605,
+    "homens_10k_solteiros": 2277,
+    "mulheres_solteiras": 42206,
+    "razao": 18.5
+  },
+  {
+    "uf": "Roraima",
+    "homens_10k": 5140,
+    "pct_homens_10k": 3.75,
+    "taxa_solteiros": 0.3491,
+    "homens_10k_solteiros": 1794,
+    "mulheres_solteiras": 30044,
+    "razao": 16.7
+  },
+  {
+    "uf": "Rondônia",
+    "homens_10k": 13978,
+    "pct_homens_10k": 3.52,
+    "taxa_solteiros": 0.3101,
+    "homens_10k_solteiros": 4335,
+    "mulheres_solteiras": 70053,
+    "razao": 16.2
+  },
+  {
+    "uf": "Tocantins",
+    "homens_10k": 15886,
+    "pct_homens_10k": 4.18,
+    "taxa_solteiros": 0.3445,
+    "homens_10k_solteiros": 5472,
+    "mulheres_solteiras": 71916,
+    "razao": 13.1
+  },
+  {
+    "uf": "Minas Gerais",
+    "homens_10k": 227640,
+    "pct_homens_10k": 4.25,
+    "taxa_solteiros": 0.404,
+    "homens_10k_solteiros": 91971,
+    "mulheres_solteiras": 1149112,
+    "razao": 12.5
+  },
+  {
+    "uf": "Espírito Santo",
+    "homens_10k": 46416,
+    "pct_homens_10k": 4.65,
+    "taxa_solteiros": 0.3512,
+    "homens_10k_solteiros": 16299,
+    "mulheres_solteiras": 193560,
+    "razao": 11.9
+  },
+  {
+    "uf": "Goiás",
+    "homens_10k": 94680,
+    "pct_homens_10k": 4.86,
+    "taxa_solteiros": 0.3442,
+    "homens_10k_solteiros": 32588,
+    "mulheres_solteiras": 368852,
+    "razao": 11.3
+  },
+  {
+    "uf": "Rio De Janeiro",
+    "homens_10k": 236463,
+    "pct_homens_10k": 6.35,
+    "taxa_solteiros": 0.3908,
+    "homens_10k_solteiros": 92420,
+    "mulheres_solteiras": 966718,
+    "razao": 10.5
+  },
+  {
+    "uf": "Mato Grosso Do Sul",
+    "homens_10k": 37738,
+    "pct_homens_10k": 5.15,
+    "taxa_solteiros": 0.3348,
+    "homens_10k_solteiros": 12636,
+    "mulheres_solteiras": 131445,
+    "razao": 10.4
+  },
+  {
+    "uf": "Rio Grande Do Sul",
+    "homens_10k": 163531,
+    "pct_homens_10k": 5.72,
+    "taxa_solteiros": 0.3307,
+    "homens_10k_solteiros": 54085,
+    "mulheres_solteiras": 494607,
+    "razao": 9.1
+  },
+  {
+    "uf": "Paraná",
+    "homens_10k": 184423,
+    "pct_homens_10k": 5.87,
+    "taxa_solteiros": 0.3224,
+    "homens_10k_solteiros": 59459,
+    "mulheres_solteiras": 513123,
+    "razao": 8.6
+  },
+  {
+    "uf": "Mato Grosso",
+    "homens_10k": 60153,
+    "pct_homens_10k": 5.86,
+    "taxa_solteiros": 0.3224,
+    "homens_10k_solteiros": 19395,
+    "mulheres_solteiras": 160764,
+    "razao": 8.3
+  },
+  {
+    "uf": "São Paulo",
+    "homens_10k": 826134,
+    "pct_homens_10k": 7.11,
+    "taxa_solteiros": 0.3757,
+    "homens_10k_solteiros": 310398,
+    "mulheres_solteiras": 2471480,
+    "razao": 8.0
+  },
+  {
+    "uf": "Santa Catarina",
+    "homens_10k": 136625,
+    "pct_homens_10k": 6.24,
+    "taxa_solteiros": 0.3018,
+    "homens_10k_solteiros": 41233,
+    "mulheres_solteiras": 323591,
+    "razao": 7.8
+  },
+  {
+    "uf": "Distrito Federal",
+    "homens_10k": 106755,
+    "pct_homens_10k": 14.47,
+    "taxa_solteiros": 0.4059,
+    "homens_10k_solteiros": 43336,
+    "mulheres_solteiras": 192493,
+    "razao": 4.4
+  }
+]

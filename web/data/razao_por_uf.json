@@ -1,0 +1,191 @@
+[
+  {
+    "uf": "Maranhão",
+    "razao": 35.3,
+    "homens_10k_solteiros": 10266,
+    "mulheres_solteiras": 362175,
+    "pct_homens_10k": 2.2
+  },
+  {
+    "uf": "Alagoas",
+    "razao": 29.9,
+    "homens_10k_solteiros": 5768,
+    "mulheres_solteiras": 172436,
+    "pct_homens_10k": 2.86
+  },
+  {
+    "uf": "Bahia",
+    "razao": 28.2,
+    "homens_10k_solteiros": 30116,
+    "mulheres_solteiras": 850450,
+    "pct_homens_10k": 2.6
+  },
+  {
+    "uf": "Ceará",
+    "razao": 27.4,
+    "homens_10k_solteiros": 18580,
+    "mulheres_solteiras": 508304,
+    "pct_homens_10k": 2.76
+  },
+  {
+    "uf": "Piauí",
+    "razao": 27.1,
+    "homens_10k_solteiros": 6652,
+    "mulheres_solteiras": 180307,
+    "pct_homens_10k": 2.7
+  },
+  {
+    "uf": "Pará",
+    "razao": 25.5,
+    "homens_10k_solteiros": 15814,
+    "mulheres_solteiras": 402714,
+    "pct_homens_10k": 2.64
+  },
+  {
+    "uf": "Paraíba",
+    "razao": 24.0,
+    "homens_10k_solteiros": 8816,
+    "mulheres_solteiras": 211598,
+    "pct_homens_10k": 3.16
+  },
+  {
+    "uf": "Sergipe",
+    "razao": 23.7,
+    "homens_10k_solteiros": 5712,
+    "mulheres_solteiras": 135445,
+    "pct_homens_10k": 3.34
+  },
+  {
+    "uf": "Pernambuco",
+    "razao": 23.5,
+    "homens_10k_solteiros": 22164,
+    "mulheres_solteiras": 520712,
+    "pct_homens_10k": 3.28
+  },
+  {
+    "uf": "Acre",
+    "razao": 22.8,
+    "homens_10k_solteiros": 1749,
+    "mulheres_solteiras": 39929,
+    "pct_homens_10k": 3.16
+  },
+  {
+    "uf": "Amazonas",
+    "razao": 21.3,
+    "homens_10k_solteiros": 9474,
+    "mulheres_solteiras": 201578,
+    "pct_homens_10k": 3.35
+  },
+  {
+    "uf": "Rio Grande Do Norte",
+    "razao": 20.7,
+    "homens_10k_solteiros": 8917,
+    "mulheres_solteiras": 184712,
+    "pct_homens_10k": 3.54
+  },
+  {
+    "uf": "Amapá",
+    "razao": 18.5,
+    "homens_10k_solteiros": 2277,
+    "mulheres_solteiras": 42206,
+    "pct_homens_10k": 3.89
+  },
+  {
+    "uf": "Roraima",
+    "razao": 16.7,
+    "homens_10k_solteiros": 1794,
+    "mulheres_solteiras": 30044,
+    "pct_homens_10k": 3.75
+  },
+  {
+    "uf": "Rondônia",
+    "razao": 16.2,
+    "homens_10k_solteiros": 4335,
+    "mulheres_solteiras": 70053,
+    "pct_homens_10k": 3.52
+  },
+  {
+    "uf": "Tocantins",
+    "razao": 13.1,
+    "homens_10k_solteiros": 5472,
+    "mulheres_solteiras": 71916,
+    "pct_homens_10k": 4.18
+  },
+  {
+    "uf": "Minas Gerais",
+    "razao": 12.5,
+    "homens_10k_solteiros": 91971,
+    "mulheres_solteiras": 1149112,
+    "pct_homens_10k": 4.25
+  },
+  {
+    "uf": "Espírito Santo",
+    "razao": 11.9,
+    "homens_10k_solteiros": 16299,
+    "mulheres_solteiras": 193560,
+    "pct_homens_10k": 4.65
+  },
+  {
+    "uf": "Goiás",
+    "razao": 11.3,
+    "homens_10k_solteiros": 32588,
+    "mulheres_solteiras": 368852,
+    "pct_homens_10k": 4.86
+  },
+  {
+    "uf": "Rio De Janeiro",
+    "razao": 10.5,
+    "homens_10k_solteiros": 92420,
+    "mulheres_solteiras": 966718,
+    "pct_homens_10k": 6.35
+  },
+  {
+    "uf": "Mato Grosso Do Sul",
+    "razao": 10.4,
+    "homens_10k_solteiros": 12636,
+    "mulheres_solteiras": 131445,
+    "pct_homens_10k": 5.15
+  },
+  {
+    "uf": "Rio Grande Do Sul",
+    "razao": 9.1,
+    "homens_10k_solteiros": 54085,
+    "mulheres_solteiras": 494607,
+    "pct_homens_10k": 5.72
+  },
+  {
+    "uf": "Paraná",
+    "razao": 8.6,
+    "homens_10k_solteiros": 59459,
+    "mulheres_solteiras": 513123,
+    "pct_homens_10k": 5.87
+  },
+  {
+    "uf": "Mato Grosso",
+    "razao": 8.3,
+    "homens_10k_solteiros": 19395,
+    "mulheres_solteiras": 160764,
+    "pct_homens_10k": 5.86
+  },
+  {
+    "uf": "São Paulo",
+    "razao": 8.0,
+    "homens_10k_solteiros": 310398,
+    "mulheres_solteiras": 2471480,
+    "pct_homens_10k": 7.11
+  },
+  {
+    "uf": "Santa Catarina",
+    "razao": 7.8,
+    "homens_10k_solteiros": 41233,
+    "mulheres_solteiras": 323591,
+    "pct_homens_10k": 6.24
+  },
+  {
+    "uf": "Distrito Federal",
+    "razao": 4.4,
+    "homens_10k_solteiros": 43336,
+    "mulheres_solteiras": 192493,
+    "pct_homens_10k": 14.47
+  }
+]
