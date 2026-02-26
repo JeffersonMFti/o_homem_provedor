@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R$ 10k ou nada? — A matemática que ninguém foi atrás</title>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-frase">"Pra namorar comigo, ele precisa ganhar pelo menos 10 mil por mês."</p>
+      <h1>A frase que tomou as redes.<br>A matemática que ninguém foi atrás.</h1>
+      <p class="hero-sub">
+        Quantos homens solteiros ganham R$ 10k ou mais no Brasil?<br>
+        Dados do Censo Demográfico 2022 — IBGE.
+      </p>
+      <div class="razao-destaque">
+        <span class="razao-numero" id="razao-nacional">—</span>
+        <span class="razao-label">mulheres solteiras para cada homem solteiro que ganha R$ 10k+</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEÇÃO 1 — A renda -->
+  <section class="secao" id="sec-renda">
+    <div class="container">
+      <div class="secao-texto">
+        <span class="num-secao">01</span>
+        <h2>Quanto os homens ganham, de verdade</h2>
+        <p>
+          De todos os homens com carteira assinada ou emprego formal registrado no Censo 2022,
+          quanto chegam à marca de R$ 10 mil por mês?
+        </p>
+        <p class="destaque-inline">
+          <strong id="pct-10k">—</strong> dos homens empregados.
+        </p>
+        <p>
+          O gráfico abaixo mostra a distribuição completa. O eixo conta percentual de homens em cada faixa.
+          Em vermelho, as faixas acima de R$ 10k.
+        </p>
+      </div>
+      <div id="chart-distribuicao" class="chart-box"></div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2 — O filtro -->
+  <section class="secao secao-alt" id="sec-filtro">
+    <div class="container">
+      <div class="secao-texto">
+        <span class="num-secao">02</span>
+        <h2>O funil aperta quando você pede solteiro</h2>
+        <p>
+          Dos homens que ganham R$ 10k+, nem todos estão disponíveis.
+          Aplicando a taxa de homens sem união conjugal da faixa etária 25–44 anos como proxy,
+          o pool encolhe consideravelmente.
+        </p>
+        <p>
+          <strong id="homens-solteiros">—</strong> homens solteiros com renda de R$ 10k+,
+          contra <strong id="mulheres-solteiras">—</strong> mulheres solteiras na mesma faixa etária.
+        </p>
+      </div>
+      <div id="chart-funil" class="chart-box"></div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3 — A proporção -->
+  <section class="secao" id="sec-proporcao">
+    <div class="container">
+      <div class="secao-texto">
+        <span class="num-secao">03</span>
+        <h2>A proporção final</h2>
+        <p>
+          Para cada homem solteiro que ganha R$ 10k ou mais, existem
+          <strong id="razao-nacional-2">—</strong> mulheres solteiras na mesma faixa etária — no Brasil como um todo.
+        </p>
+        <p>
+          Mas o número varia muito por estado. O mapa mostra esse desequilíbrio geograficamente.
+        </p>
+      </div>
+      <div id="chart-mapa" class="chart-box chart-mapa"></div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4 — Por estado -->
+  <section class="secao secao-alt" id="sec-estados">
+    <div class="container">
+      <div class="secao-texto">
+        <span class="num-secao">04</span>
+        <h2>Estado a estado</h2>
+        <p>
+          O Distrito Federal lidera com a menor razão — tem a maior concentração de homens bem remunerados do país.
+          Nos estados do Norte e Nordeste, o desequilíbrio é muito mais acentuado.
+        </p>
+      </div>
+      <div id="chart-barras" class="chart-box chart-barras"></div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5 — Sobre -->
+  <section class="secao" id="sec-sobre">
+    <div class="container">
+      <div class="secao-texto">
+        <span class="num-secao">05</span>
+        <h2>Sobre a análise</h2>
+        <p>
+          <strong>Fonte:</strong> Censo Demográfico 2022, IBGE, via API SIDRA.
+          Nenhum dado foi estimado ou fabricado — tudo é o que o Brasil reporta sobre si mesmo.
+        </p>
+        <p>
+          <strong>Limitações metodológicas:</strong> A renda é declarada em faixas de salário mínimo (SM).
+          Para estimar quantos homens ganham acima de R$ 10.000 dentro da faixa "5 a 10 SM",
+          foi usada interpolação linear. A taxa de solteiros (25–44 anos) é aplicada como proxy ao grupo de alta renda
+          — o Censo não publica o cruzamento direto de renda + estado conjugal + faixa etária em um único agregado.
+        </p>
+        <p>
+          <strong>Nota:</strong> "Solteiro" aqui significa "não vivia em união conjugal" no Censo 2022,
+          o que inclui solteiros, divorciados e viúvos. É o dado mais próximo disponível do conceito de "disponível".
+        </p>
+        <p>
+          Dados não julgam. Apenas informam.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        Dados: <a href="https://ibge.gov.br" target="_blank" rel="noopener">IBGE — Censo 2022</a> &nbsp;|&nbsp;
+        Código: <a href="https://github.com/JeffersonMFti/r10k-ou-nada" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
