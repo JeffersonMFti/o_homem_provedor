@@ -359,16 +359,19 @@ const LandingPage = () => {
               </p>
               
               {/* Botão de Destaque */}
-              <button className="group mx-auto px-10 py-5 bg-gradient-to-r from-rose-600 to-pink-600 text-white rounded-2xl font-black text-xl shadow-2xl hover:shadow-rose-500/50 transition-all duration-300 glow-rose-strong flex items-center gap-3">
+              <a 
+                href="#geografia" 
+                className="group mx-auto px-10 py-5 bg-gradient-to-r from-rose-600 to-pink-600 text-white rounded-2xl font-black text-xl shadow-2xl hover:shadow-rose-500/50 transition-all duration-300 glow-rose-strong flex items-center gap-3"
+              >
                 Ver por Estado
                 <MapPin className="w-6 h-6 group-hover:scale-110 transition-transform" />
-              </button>
+              </a>
             </div>
           </div>
         </section>
         
         {/* Geografia da Escassez */}
-        <section className="relative px-6 py-24 bg-stone-50">
+        <section id="geografia" className="relative px-6 py-24 bg-stone-50">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">
