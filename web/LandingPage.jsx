@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { 
   TrendingDown, Users, MapPin, Code, Database, PieChart, 
   HeartCrack, Info, Github, ExternalLink, MessageCircleHeart, 
   Sparkles, Search, ArrowRight 
 } from 'lucide-react';
+import Lenis from '@studio-freight/lenis';
+import { ZoomParallax } from './src/components/ui/ZoomParallax';
 
 // Animações customizadas
 const styles = `
@@ -43,6 +45,26 @@ const styles = `
 `;
 
 const LandingPage = () => {
+  // Smooth scroll configuration
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+   
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   // Dados do projeto
   const incomeData = [
     { label: 'Até 2 SM', percent: 64.6, color: 'bg-stone-200' },
@@ -61,6 +83,38 @@ const LandingPage = () => {
     { state: 'Bahia', ratio: '28.2x', men: '80.336' },
     { state: 'Alagoas', ratio: '29.9x', men: '18.015' },
     { state: 'Maranhão', ratio: '35.3x', men: '29.426' }
+  ];
+
+  // Imagens para o Zoom Parallax Effect
+  const parallaxImages = [
+    {
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1280&h=720&fit=crop&q=80',
+      alt: 'Gráficos e análise de dados',
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1280&h=720&fit=crop&q=80',
+      alt: 'Casal feliz - relacionamentos',
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=800&h=800&fit=crop&q=80',
+      alt: 'Pessoas trabalhando - mercado de trabalho',
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1483389127117-b6a2102724ae?w=1280&h=720&fit=crop&q=80',
+      alt: 'Cidade de São Paulo - Brasil',
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=800&fit=crop&q=80',
+      alt: 'Equipe diversa - população brasileira',
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1280&h=720&fit=crop&q=80',
+      alt: 'Dashboard com estatísticas',
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1280&h=720&fit=crop&q=80',
+      alt: 'Match de relacionamento - dating app',
+    },
   ];
 
   return (
@@ -322,6 +376,9 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
+        
+        {/* Zoom Parallax Transition */}
+        <ZoomParallax images={parallaxImages} />
         
         {/* A GRANDE REVELAÇÃO - Dark Mode Disruptivo */}
         <section className="relative px-6 py-32 bg-stone-950 overflow-hidden">
