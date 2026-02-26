@@ -1,4 +1,4 @@
-# R$ 10k ou nada?: Uma análise do mercado de trabalho brasileiro
+# "R$ 10k ou nada?" Uma análise do mercado de trabalho brasileiro
 
 > *"Pra namorar comigo, ele precisa ganhar pelo menos 10 mil por mês."*  
 > A frase que tomou as redes. A matemática que ninguém foi atrás.
